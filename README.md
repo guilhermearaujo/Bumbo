@@ -1,5 +1,5 @@
 # Bumbo
-_A swifty client for Thumbor_
+_A swifty client for [Thumbor](https://github.com/thumbor/thumbor)_
 
 [![Version](https://img.shields.io/cocoapods/v/Bumbo.svg?style=flat)](http://cocoapods.org/pods/Bumbo)
 [![License](https://img.shields.io/cocoapods/l/Bumbo.svg?style=flat)](http://cocoapods.org/pods/Bumbo)
