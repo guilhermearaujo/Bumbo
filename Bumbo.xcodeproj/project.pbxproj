@@ -12,13 +12,14 @@
 		7903B5DD1E7CB7A300160352 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7903B5DB1E7CB7A300160352 /* Main.storyboard */; };
 		7903B5DF1E7CB7A300160352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7903B5DE1E7CB7A300160352 /* Assets.xcassets */; };
 		7903B5E21E7CB7A300160352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7903B5E01E7CB7A300160352 /* LaunchScreen.storyboard */; };
-		7903B5FF1E7CC80D00160352 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7903B5E81E7CB83100160352 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79567F9A1E7D8CB70006435B /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79567F991E7D8CB70006435B /* CryptoSwift.framework */; };
+		79567F9C1E7D8CC50006435B /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79567F991E7D8CB70006435B /* CryptoSwift.framework */; };
+		79567F9D1E7D8CC50006435B /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 79567F991E7D8CB70006435B /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		798CAD7C1E7A3FFA00D3C0C7 /* Bumbo.h in Headers */ = {isa = PBXBuildFile; fileRef = 798CAD7A1E7A3FFA00D3C0C7 /* Bumbo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		798CAD861E7A405200D3C0C7 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798CAD821E7A405200D3C0C7 /* Builder.swift */; };
 		798CAD871E7A405200D3C0C7 /* Bumbo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798CAD831E7A405200D3C0C7 /* Bumbo.swift */; };
 		798CAD881E7A405200D3C0C7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798CAD841E7A405200D3C0C7 /* Extensions.swift */; };
 		798CAD891E7A405200D3C0C7 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798CAD851E7A405200D3C0C7 /* Filters.swift */; };
-		B86572ED2470BE0EFE97E03B /* Pods_Bumbo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 909E5453A9BEA8FB4F30EE1C /* Pods_Bumbo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7903B5FF1E7CC80D00160352 /* CryptoSwift.framework in Embed Frameworks */,
+				79567F9D1E7D8CC50006435B /* CryptoSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,8 +47,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0EC0F55A5CEE49339BEC5AC4 /* Pods-Bumbo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bumbo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bumbo/Pods-Bumbo.release.xcconfig"; sourceTree = "<group>"; };
-		4AE1E5E43A77954BA614CB97 /* Pods-Bumbo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bumbo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bumbo/Pods-Bumbo.debug.xcconfig"; sourceTree = "<group>"; };
 		7903B5D51E7CB7A300160352 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7903B5D71E7CB7A300160352 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7903B5D91E7CB7A300160352 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,8 +54,7 @@
 		7903B5DE1E7CB7A300160352 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7903B5E11E7CB7A300160352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7903B5E31E7CB7A300160352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7903B5E81E7CB83100160352 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/Bumbo-bhgzexarahlqducffjgzmikbudln/Build/Products/Debug-iphonesimulator/CryptoSwift/CryptoSwift.framework"; sourceTree = "<group>"; };
-		7903B5EA1E7CB84400160352 /* Pods_Bumbo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Bumbo.framework; path = "../../Library/Developer/Xcode/DerivedData/Bumbo-bhgzexarahlqducffjgzmikbudln/Build/Products/Debug-iphonesimulator/Pods_Bumbo.framework"; sourceTree = "<group>"; };
+		79567F991E7D8CB70006435B /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
 		798CAD771E7A3FFA00D3C0C7 /* Bumbo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bumbo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		798CAD7A1E7A3FFA00D3C0C7 /* Bumbo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bumbo.h; sourceTree = "<group>"; };
 		798CAD7B1E7A3FFA00D3C0C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 		798CAD831E7A405200D3C0C7 /* Bumbo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bumbo.swift; sourceTree = "<group>"; };
 		798CAD841E7A405200D3C0C7 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		798CAD851E7A405200D3C0C7 /* Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
-		909E5453A9BEA8FB4F30EE1C /* Pods_Bumbo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bumbo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79567F9C1E7D8CC50006435B /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B86572ED2470BE0EFE97E03B /* Pods_Bumbo.framework in Frameworks */,
+				79567F9A1E7D8CB70006435B /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +103,6 @@
 				798CAD791E7A3FFA00D3C0C7 /* Bumbo */,
 				7903B5D61E7CB7A300160352 /* Example */,
 				798CAD781E7A3FFA00D3C0C7 /* Products */,
-				A608AA035BED6145F1465A8B /* Pods */,
 				DA9FDAB27C3FB10DC0439934 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -132,21 +129,10 @@
 			path = Bumbo;
 			sourceTree = "<group>";
 		};
-		A608AA035BED6145F1465A8B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4AE1E5E43A77954BA614CB97 /* Pods-Bumbo.debug.xcconfig */,
-				0EC0F55A5CEE49339BEC5AC4 /* Pods-Bumbo.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		DA9FDAB27C3FB10DC0439934 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7903B5EA1E7CB84400160352 /* Pods_Bumbo.framework */,
-				7903B5E81E7CB83100160352 /* CryptoSwift.framework */,
-				909E5453A9BEA8FB4F30EE1C /* Pods_Bumbo.framework */,
+				79567F991E7D8CB70006435B /* CryptoSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -188,12 +174,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 798CAD7F1E7A3FFA00D3C0C7 /* Build configuration list for PBXNativeTarget "Bumbo" */;
 			buildPhases = (
-				B49F658BAF446ADE73586552 /* [CP] Check Pods Manifest.lock */,
 				798CAD721E7A3FFA00D3C0C7 /* Sources */,
 				798CAD731E7A3FFA00D3C0C7 /* Frameworks */,
 				798CAD741E7A3FFA00D3C0C7 /* Headers */,
 				798CAD751E7A3FFA00D3C0C7 /* Resources */,
-				57D941510183E96979F0D9F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,39 +248,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		57D941510183E96979F0D9F0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bumbo/Pods-Bumbo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B49F658BAF446ADE73586552 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		7903B5D11E7CB7A300160352 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -353,6 +304,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guilherme.Example;
@@ -366,6 +321,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guilherme.Example;
@@ -475,7 +434,6 @@
 		};
 		798CAD801E7A3FFA00D3C0C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AE1E5E43A77954BA614CB97 /* Pods-Bumbo.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -483,6 +441,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Bumbo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -497,7 +459,6 @@
 		};
 		798CAD811E7A3FFA00D3C0C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0EC0F55A5CEE49339BEC5AC4 /* Pods-Bumbo.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -505,6 +466,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Bumbo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
