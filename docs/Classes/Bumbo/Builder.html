@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Builder Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../../js/jquery.min.js" defer></script>
+    <script src="../../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Builder" class="dashAnchor"></a>
+    <a title="Builder Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../../index.html">Bumbo Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/guilhermearaujo/Bumbo"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fgithub%2Ecom%2Fguilhermearaujo%2FBumbo%2Fdocsets%2FBumbo%2Exml"><img src="../../img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../../index.html">Bumbo Reference</a>
+        <img id="carat" src="../../img/carat.png" />
+        Builder Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Classes/Bumbo.html">Bumbo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Bumbo/TrimCorner.html">– TrimCorner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Bumbo/Format.html">– Format</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Bumbo/VerticalAlign.html">– VerticalAlign</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Bumbo/HorizontalAlign.html">– HorizontalAlign</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Bumbo/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Bumbo/Filter.html">– Filter</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Builder</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Builder</span></code></pre>
+
+                </div>
+              </div>
+            <p>A builder used to apply settings and filters.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FCC5Bumbo5Bumbo7Builder4metaFSbDS1_"></a>
+                    <a name="//apple_ref/swift/Method/meta(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FCC5Bumbo5Bumbo7Builder4metaFSbDS1_">meta(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Meta provides data regarding the image processing operations that would be performed.
+When meta is used, the resulting URL will return a JSON string, not an image.
+- parameter enabled: Whether meta is enabled or not. Defaults to false if method is not called
+- returns: The builder</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">meta</span><span class="p">(</span><span class="n">_</span> <span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>enabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether meta is enabled or not. Defaults to false if method is not called</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The builder</p>
+
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/guilhermearaujo/Bumbo/tree/0.2.0/Bumbo/Builder.swift#L42-L45">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FCC5Bumbo5Bumbo7Builder4trimFOS0_10TrimCornerDS1_"></a>
+                    <a name="//apple_ref/swift/Method/trim(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FCC5Bumbo5Bumbo7Builder4trimFOS0_10TrimCornerDS1_">trim(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Trim will select the appropriate corner to trim.
+- parameter corner: The corner used while trimming. Defaults to top-left
+- returns: The builder</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">trim</span><span class="p">(</span><span class="n">_</span> <span class="nv">corner</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Bumbo/TrimCorner.html">TrimCorner</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">topLeft</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>corner</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The corner used while trimming. Defaults to top-left</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The builder</p>
+
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/guilhermearaujo/Bumbo/tree/0.2.0/Bumbo/Builder.swift#L52-L55">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FCC5Bumbo5Bumbo7Builder4cropFT7leftTopT1xSi1ySi_11rightBottomT1xSi1ySi__DS1_"></a>
+                    <a name="//apple_ref/swift/Method/crop(leftTop:rightBottom:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FCC5Bumbo5Bumbo7Builder4cropFT7leftTopT1xSi1ySi_11rightBottomT1xSi1ySi__DS1_">crop(leftTop:rightBottom:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Crop will define which area of the image should be cropped before resizing and filtering.
+- parameter leftTop: The left-top (x,y) coordinate
+- parameter rightBottom: The right-bottom (x,y) coordinate
+- returns: The builder</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">crop</span><span class="p">(</span><span class="nv">leftTop</span><span class="p">:</span> <span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Int</span><span class="p">),</span> <span class="nv">rightBottom</span><span class="p">:</span> <span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Int</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>leftTop</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The left-top (x,y) coordinate</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rightBottom</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The right-bottom (x,y) coordinate</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The builder</p>
+
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/guilhermearaujo/Bumbo/tree/0.2.0/Bumbo/Builder.swift#L63-L66">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FCC5Bumbo5Bumbo7Builder5fitInFSbDS1_"></a>
+                    <a name="//apple_ref/swift/Method/fitIn(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FCC5Bumbo5Bumbo7Builder5fitInFSbDS1_">fitIn(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fit in specifies that the image should not be auto-cropped, but auto-resized.
+- parameter enabled: Whether fit-in is enabled or not. Defaults to false if method is not called
+- returns: The builder</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fitIn</span><span class="p">(</span><span class="n">_</span> <span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>enabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether fit-in is enabled or not. Defaults to false if method is not called</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The builder</p>
+
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/guilhermearaujo/Bumbo/tree/0.2.0/Bumbo/Builder.swift#L73-L76">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FCC5Bumbo5Bumbo7Builder5alignFT10horizontalOS0_15HorizontalAlign8verticalOS0_13VerticalAlign_DS1_"></a>
+                    <a name="//apple_ref/swift/Method/align(horizontal:vertical:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FCC5Bumbo5Bumbo7Builder5alignFT10horizontalOS0_15HorizontalAlign8verticalOS0_13VerticalAlign_DS1_">align(horizontal:vertical:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Horizontal and vertical align
+If the image is cropped to a different ratio and its margins needs trimming, horizontal and
+vertical align will specify which directions the cropping box will snap to.
+- parameter horizontal: Which horizontal portion should be kept
+- parameter vertical: Which vertical portion should be kept
+- returns: The builder</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">align</span><span class="p">(</span><span class="nv">horizontal</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Bumbo/HorizontalAlign.html">HorizontalAlign</a></span><span class="p">,</span> <span class="nv">vertical</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Bumbo/VerticalAlign.html">VerticalAlign</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>horizontal</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Which horizontal portion should be kept</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>vertical</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Which vertical portion should be kept</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The builder</p>
+
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/guilhermearaujo/Bumbo/tree/0.2.0/Bumbo/Builder.swift#L86-L90">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FCC5Bumbo5Bumbo7Builder5alignFT10horizontalOS0_15HorizontalAlign_DS1_"></a>
+                    <a name="//apple_ref/swift/Method/align(horizontal:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FCC5Bumbo5Bumbo7Builder5alignFT10horizontalOS0_15HorizontalAlign_DS1_">align(horizontal:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Horizontal align
+If the image is cropped to a different ratio and its sides needs trimming, horizontal align
+will specify which direction the cropping box will snap to.
+- parameter horizontal: Which horizontal portion should be kept
+- returns: The builder</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">align</span><span class="p">(</span><span class="nv">horizontal</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Bumbo/HorizontalAlign.html">HorizontalAlign</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>horizontal</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Which horizontal portion should be kept</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The builder</p>
+
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/guilhermearaujo/Bumbo/tree/0.2.0/Bumbo/Builder.swift#L99-L102">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FCC5Bumbo5Bumbo7Builder5alignFT8verticalOS0_13VerticalAlign_DS1_"></a>
+                    <a name="//apple_ref/swift/Method/align(vertical:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FCC5Bumbo5Bumbo7Builder5alignFT8verticalOS0_13VerticalAlign_DS1_">align(vertical:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Vertical align
+If the image is cropped to a different ratio and its margins needs trimming, vertical align
+will specify which direction the cropping box will snap to.
+- parameter vertical: Which vertical portion should be kept
+- returns: The builder</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">align</span><span class="p">(</span><span class="nv">vertical</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Bumbo/VerticalAlign.html">VerticalAlign</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>vertical</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Which vertical portion should be kept</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The builder</p>
+
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/guilhermearaujo/Bumbo/tree/0.2.0/Bumbo/Builder.swift#L111-L114">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FCC5Bumbo5Bumbo7Builder17useSmartDetectorsFSbDS1_"></a>
+                    <a name="//apple_ref/swift/Method/useSmartDetectors(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FCC5Bumbo5Bumbo7Builder17useSmartDetectorsFSbDS1_">useSmartDetectors(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Smart detectors
+Enables the use of detectors. Detectors need to be enabled on the server as well.
+- parameter enabled: Whether smart detectors are enabled or not. Defaults to false if method is not called
+- returns: The builder</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">useSmartDetectors</span><span class="p">(</span><span class="n">_</span> <span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>enabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether smart detectors are enabled or not. Defaults to false if method is not called</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The builder</p>
+
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/guilhermearaujo/Bumbo/tree/0.2.0/Bumbo/Builder.swift#L122-L125">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FCC5Bumbo5Bumbo7Builder6filterFOS0_6FilterDS1_"></a>
+                    <a name="//apple_ref/swift/Method/filter(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FCC5Bumbo5Bumbo7Builder6filterFOS0_6FilterDS1_">filter(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Filter adds a filter to the list of processing filters.
+- parameter filter: A filter to be processed
+- returns: The builder</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">filter</span><span class="p">(</span><span class="n">_</span> <span class="nv">filter</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Bumbo/Filter.html">Filter</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>filter</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A filter to be processed</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The builder</p>
+
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/guilhermearaujo/Bumbo/tree/0.2.0/Bumbo/Builder.swift#L132-L135">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FCC5Bumbo5Bumbo7Builder5toUrlFT_SS"></a>
+                    <a name="//apple_ref/swift/Method/toUrl()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FCC5Bumbo5Bumbo7Builder5toUrlFT_SS">toUrl()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generates the final URL.
+- returns: The URL to the processed image (or meta JSON)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">toUrl</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The URL to the processed image (or meta JSON)</p>
+
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/guilhermearaujo/Bumbo/tree/0.2.0/Bumbo/Builder.swift#L141-L186">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://www.guilhermearaujo.me" target="_blank" rel="external">Guilherme Araújo</a>. All rights reserved. (Last updated: 2017-03-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

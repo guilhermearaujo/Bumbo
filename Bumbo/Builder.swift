@@ -10,6 +10,9 @@ import Foundation
 import CryptoSwift
 
 public extension Bumbo {
+  /**
+    A builder used to apply settings and filters.
+   */
   public class Builder {
     var sourceUrl: String = ""
     var width: Int = 0
@@ -30,52 +33,111 @@ public extension Bumbo {
       self.height = height
     }
 
+    /**
+     Meta provides data regarding the image processing operations that would be performed.
+     When meta is used, the resulting URL will return a JSON string, not an image.
+     - parameter enabled: Whether meta is enabled or not. Defaults to false if method is not called
+     - returns: The builder
+     */
     public func meta(_ enabled: Bool = true) -> Self {
       self.meta = enabled
       return self
     }
 
+    /**
+     Trim will select the appropriate corner to trim.
+     - parameter corner: The corner used while trimming. Defaults to top-left
+     - returns: The builder
+     */
     public func trim(_ corner: TrimCorner = .topLeft) -> Self {
       self.trim = corner
       return self
     }
 
+    /**
+     Crop will define which area of the image should be cropped before resizing and filtering.
+     - parameter leftTop: The left-top (x,y) coordinate
+     - parameter rightBottom: The right-bottom (x,y) coordinate
+     - returns: The builder
+     */
     public func crop(leftTop: (x: Int, y: Int), rightBottom: (x: Int, y: Int)) -> Self {
       self.crop = (leftTop, rightBottom)
       return self
     }
 
+    /**
+     Fit in specifies that the image should not be auto-cropped, but auto-resized.
+     - parameter enabled: Whether fit-in is enabled or not. Defaults to false if method is not called
+     - returns: The builder
+     */
     public func fitIn(_ enabled: Bool = true) -> Self {
       self.fitIn = enabled
       return self
     }
 
+    /**
+     Horizontal and vertical align
+     If the image is cropped to a different ratio and its margins needs trimming, horizontal and
+     vertical align will specify which directions the cropping box will snap to.
+     - parameter horizontal: Which horizontal portion should be kept
+     - parameter vertical: Which vertical portion should be kept
+     - returns: The builder
+     */
     public func align(horizontal: HorizontalAlign, vertical: VerticalAlign) -> Self {
       self.hAlign = horizontal
       self.vAlign = vertical
       return self
     }
 
+    /**
+     Horizontal align
+     If the image is cropped to a different ratio and its sides needs trimming, horizontal align
+     will specify which direction the cropping box will snap to.
+     - parameter horizontal: Which horizontal portion should be kept
+     - returns: The builder
+     */
     public func align(horizontal: HorizontalAlign) -> Self {
       self.hAlign = horizontal
       return self
     }
 
+    /**
+     Vertical align
+     If the image is cropped to a different ratio and its margins needs trimming, vertical align
+     will specify which direction the cropping box will snap to.
+     - parameter vertical: Which vertical portion should be kept
+     - returns: The builder
+     */
     public func align(vertical: VerticalAlign) -> Self {
       self.vAlign = vertical
       return self
     }
 
+    /**
+     Smart detectors
+     Enables the use of detectors. Detectors need to be enabled on the server as well.
+     - parameter enabled: Whether smart detectors are enabled or not. Defaults to false if method is not called
+     - returns: The builder
+     */
     public func useSmartDetectors(_ enabled: Bool = true) -> Self {
       self.smartDetectors = enabled
       return self
     }
 
+    /**
+     Filter adds a filter to the list of processing filters.
+     - parameter filter: A filter to be processed
+     - returns: The builder
+     */
     public func filter(_ filter: Filter) -> Self {
       filters.append(filter)
       return self
     }
 
+    /**
+     Generates the final URL.
+     - returns: The URL to the processed image (or meta JSON)
+     */
     public func toUrl() -> String {
       guard let host = Bumbo.host else {
         return "Bumbo: Thumbor host is not defined"

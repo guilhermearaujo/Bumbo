@@ -9,28 +9,90 @@
 import Foundation
 
 public extension Bumbo {
+  /**
+   Available filters for processing
+   
+   Check [Thumbor's documentation](http://thumbor.readthedocs.io/en/latest/filters.html)
+   for further explanation of each filter.
+   */
   public enum Filter {
+    /// Sets the background layer to the specified color
     case backgroundColor(UIColor)
+
+    /// Applies Gaussian blur
     case blur(radius: Float, sigma: Int)
+
+    /// Increases or decreases the image brightness
+    ///
+    /// Ranges from -100 to 100
     case brightness(Int)
+
+    /// Increases or decreases the image contrast
+    ///
+    /// Ranges from -100 to 100
     case contrast(Int)
+
+    /// Runs a convolution matrix (or kernel) on the image
     case convolution(matrix: [[Int]], normalize: Bool)
+
+    /// Equalizes the color distribution in the image
     case equalize
+
+    /// Use focal points when converting the image
     case extractFocalPoints
+
+    /// Returns an image sized exactly as requested wherever is its ratio by
+    /// filling with chosen color the missing parts. Usually used with `fit-in`
     case filling(color: UIColor, fillTransparent: Bool)
+
+    /// Adds a focal point to be used in later transforms
     case focal(top: Int, left: Int, bottom: Int, right: Int)
+
+    /// Specifies the output format of the image
     case format(Format)
+
+    /// Converts the image to grayscale
     case grayScale
+
+    /// Degrades the quality of the image until the image is under the
+    /// specified amount of bytes
     case maxBytes(Int)
+
+    /// Prevents thumbor from upscaling images
     case noUpscale
+
+    /// Adds noise to the image
     case noise(Int)
+
+    /// Changes the overall quality of the JPEG image (does nothing for PNGs
+    /// or GIFs)
+    ///
+    /// Ranges from 0 to 100
     case quality(Int)
+
+    ///
     case redEye
+
+    /// Changes the amount of color in each of the three channels
+    ///
+    /// Channels range from -100 to 100
     case rgb(red: Int, green: Int, blue: Int)
+
+    /// Rotates the image
+    ///
+    /// Angle ranges from 0 to 359
     case rotate(Int)
+
+    /// Adds rounded corners to the image
     case roundCorners(Int)
+
+    /// Enhances apparent sharpness of the image
     case sharpen(amount: Float, radius: Float, luminanceOnly: Bool)
+
+    /// Removes any ICC information
     case stripICC
+
+    /// Adds a watermark image on top of the original
     case watermark(url: String, x: Int, y: Int, alpha: Int)
 
     var filterComponent: String {

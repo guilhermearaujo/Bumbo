@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bumbo  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Bumbo  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">Bumbo Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/guilhermearaujo/Bumbo"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fgithub%2Ecom%2Fguilhermearaujo%2FBumbo%2Fdocsets%2FBumbo%2Exml"><img src="img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">Bumbo Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Bumbo  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/Bumbo.html">Bumbo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Bumbo/TrimCorner.html">– TrimCorner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Bumbo/Format.html">– Format</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Bumbo/VerticalAlign.html">– VerticalAlign</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Bumbo/HorizontalAlign.html">– HorizontalAlign</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Bumbo/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Bumbo/Filter.html">– Filter</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <a href='#bumbo' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='bumbo'>Bumbo</h1>
+
+<p><em>A swifty client for <a href="https://github.com/thumbor/thumbor">Thumbor</a></em></p>
+
+<p><a href="http://cocoapods.org/pods/Bumbo"><img src="https://img.shields.io/cocoapods/v/Bumbo.svg?style=flat" alt="Version"></a>
+<a href="http://cocoapods.org/pods/Bumbo"><img src="https://img.shields.io/cocoapods/l/Bumbo.svg?style=flat" alt="License"></a>
+<a href="http://cocoapods.org/pods/Bumbo"><img src="https://img.shields.io/cocoapods/p/Bumbo.svg?style=flat" alt="Platform"></a></p>
+<a href='#installation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='installation'>Installation</h2>
+
+<p>Bumbo is available through <a href="http://cocoapods.org">CocoaPods</a>. To install
+it, simply add the following line to your Podfile:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'Bumbo'</span>
+</code></pre>
+<a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage'>Usage</h2>
+
+<p>Configure your server and secret key:</p>
+<pre class="highlight swift"><code><span class="kt">Bumbo</span><span class="o">.</span><span class="nf">configure</span><span class="p">(</span><span class="nv">host</span><span class="p">:</span> <span class="s">"https://thumbor.myurl.com/"</span><span class="p">,</span> <span class="nv">secretKey</span><span class="p">:</span> <span class="s">"MY_SECRET_KEY"</span><span class="p">)</span>
+<span class="kt">Bumbo</span><span class="o">.</span><span class="nf">configure</span><span class="p">(</span><span class="nv">host</span><span class="p">:</span> <span class="s">"https://thumbor.myurl.com/"</span><span class="p">,</span> <span class="nv">secretKey</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span> <span class="c1">// Unsafe mode</span>
+</code></pre>
+
+<p>Build your image URL with the desired settings and filters:</p>
+<pre class="highlight swift"><code><span class="kt">Bumbo</span><span class="o">.</span><span class="nf">load</span><span class="p">(</span><span class="s">"http://funnymemes.com/hilarious.jpg"</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="mi">320</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">180</span><span class="p">)</span>
+  <span class="o">.</span><span class="nf">trim</span><span class="p">()</span>
+  <span class="o">.</span><span class="nf">crop</span><span class="p">(</span><span class="nv">leftTop</span><span class="p">:</span> <span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">rightBottom</span><span class="p">:</span> <span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">200</span><span class="p">))</span>
+  <span class="o">.</span><span class="nf">fitIn</span><span class="p">()</span>
+  <span class="o">.</span><span class="nf">align</span><span class="p">(</span><span class="nv">horizontal</span><span class="p">:</span> <span class="o">.</span><span class="k">left</span><span class="p">,</span> <span class="nv">vertical</span><span class="p">:</span> <span class="o">.</span><span class="n">bottom</span><span class="p">)</span>
+  <span class="o">.</span><span class="nf">useSmartDetectors</span><span class="p">()</span>
+  <span class="o">.</span><span class="nf">filter</span><span class="p">(</span><span class="o">.</span><span class="n">grayScale</span><span class="p">)</span>
+  <span class="o">.</span><span class="nf">filter</span><span class="p">(</span><span class="o">.</span><span class="n">stripICC</span><span class="p">)</span>
+  <span class="o">.</span><span class="nf">filter</span><span class="p">(</span><span class="o">.</span><span class="nf">rotate</span><span class="p">(</span><span class="mi">90</span><span class="p">))</span>
+  <span class="o">.</span><span class="nf">filter</span><span class="p">(</span><span class="o">.</span><span class="nf">quality</span><span class="p">(</span><span class="mi">50</span><span class="p">))</span>
+  <span class="o">.</span><span class="nf">filter</span><span class="p">(</span><span class="o">.</span><span class="nf">noise</span><span class="p">(</span><span class="mi">50</span><span class="p">))</span>
+  <span class="o">.</span><span class="nf">toUrl</span><span class="p">()</span>
+</code></pre>
+<a href='#license' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='license'>License</h2>
+
+<p>Bumbo is available under the MIT license. See the LICENSE file for more info.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://www.guilhermearaujo.me" target="_blank" rel="external">Guilherme Araújo</a>. All rights reserved. (Last updated: 2017-03-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
