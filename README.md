@@ -22,14 +22,20 @@ Bumbo.configure(host: "https://thumbor.myurl.com/", secretKey: "MY_SECRET_KEY")
 Bumbo.configure(host: "https://thumbor.myurl.com/", secretKey: nil) // Unsafe mode
 ```
 
-Build your image with filters:
+Build your image URL with the desired settings and filters:
 
 ```swift
 Bumbo.load("http://funnymemes.com/hilarious.jpg", width: 320, height: 180)
+  .trim()
+  .crop(leftTop: (x: 0, y: 0), rightBottom: (x: 200, y: 200))
+  .fitIn()
+  .align(horizontal: .left, vertical: .bottom)
+  .useSmartDetectors()
   .filter(.grayScale)
-  .filter(.blur(radius: 3, sigma: 3))
   .filter(.stripICC)
-  .filter(.roundCorners(8))
+  .filter(.rotate(90))
+  .filter(.quality(50))
+  .filter(.noise(50))
   .toUrl()
 ```
 

@@ -54,7 +54,7 @@ public extension Bumbo {
       case .focal(let top, let left, let bottom, let right):
         return "focal(\(left)x\(top),\(right)x\(bottom))"
       case .format(let format):
-        return "format(\(format.rawValue))"
+        return "format(\(format))"
       case .grayScale:
         return "grayscale()"
       case .maxBytes(let size):

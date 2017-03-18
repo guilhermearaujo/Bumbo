@@ -12,13 +12,24 @@
 		7903B5DD1E7CB7A300160352 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7903B5DB1E7CB7A300160352 /* Main.storyboard */; };
 		7903B5DF1E7CB7A300160352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7903B5DE1E7CB7A300160352 /* Assets.xcassets */; };
 		7903B5E21E7CB7A300160352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7903B5E01E7CB7A300160352 /* LaunchScreen.storyboard */; };
-		7903B5F61E7CB8B900160352 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7903B5E81E7CB83100160352 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7903B5FF1E7CC80D00160352 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7903B5E81E7CB83100160352 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		798CAD7C1E7A3FFA00D3C0C7 /* Bumbo.h in Headers */ = {isa = PBXBuildFile; fileRef = 798CAD7A1E7A3FFA00D3C0C7 /* Bumbo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		798CAD861E7A405200D3C0C7 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798CAD821E7A405200D3C0C7 /* Builder.swift */; };
 		798CAD871E7A405200D3C0C7 /* Bumbo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798CAD831E7A405200D3C0C7 /* Bumbo.swift */; };
 		798CAD881E7A405200D3C0C7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798CAD841E7A405200D3C0C7 /* Extensions.swift */; };
 		798CAD891E7A405200D3C0C7 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798CAD851E7A405200D3C0C7 /* Filters.swift */; };
+		B86572ED2470BE0EFE97E03B /* Pods_Bumbo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 909E5453A9BEA8FB4F30EE1C /* Pods_Bumbo.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7903B5FD1E7CC7B500160352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 798CAD6E1E7A3FFA00D3C0C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 798CAD761E7A3FFA00D3C0C7;
+			remoteInfo = Bumbo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		7903B5F71E7CB8B900160352 /* Embed Frameworks */ = {
@@ -27,7 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7903B5F61E7CB8B900160352 /* CryptoSwift.framework in Embed Frameworks */,
+				7903B5FF1E7CC80D00160352 /* CryptoSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B86572ED2470BE0EFE97E03B /* Pods_Bumbo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +177,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7903B5FE1E7CC7B500160352 /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -289,8 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7903B5DA1E7CB7A300160352 /* ViewController.swift in Sources */,
 				7903B5D81E7CB7A300160352 /* AppDelegate.swift in Sources */,
+				7903B5DA1E7CB7A300160352 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +319,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7903B5FE1E7CC7B500160352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 798CAD761E7A3FFA00D3C0C7 /* Bumbo */;
+			targetProxy = 7903B5FD1E7CC7B500160352 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7903B5DB1E7CB7A300160352 /* Main.storyboard */ = {
@@ -505,6 +526,7 @@
 				7903B5E61E7CB7A300160352 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		798CAD711E7A3FFA00D3C0C7 /* Build configuration list for PBXProject "Bumbo" */ = {
 			isa = XCConfigurationList;

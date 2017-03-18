@@ -12,11 +12,28 @@ public class Bumbo {
   static var host: String? = nil
   static var secretKey: String? = nil
 
+  public enum TrimCorner: String {
+    case bottomRight = "bottom-right"
+    case topLeft = "top-left"
+  }
+
   public enum Format: String {
-    case gif = "gif"
-    case jpeg = "jpeg"
-    case png = "png"
-    case webp = "webp"
+    case gif
+    case jpeg
+    case png
+    case webp
+  }
+
+  public enum VerticalAlign: String {
+    case top
+    case middle
+    case bottom
+  }
+
+  public enum HorizontalAlign: String {
+    case left
+    case center
+    case right
   }
 
   public static func configure(host: String, secretKey: String?) {
