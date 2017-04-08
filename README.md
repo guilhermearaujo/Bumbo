@@ -7,12 +7,19 @@ _A swifty client for [Thumbor](https://github.com/thumbor/thumbor)_
 
 ## Installation
 
-Bumbo is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+Bumbo is available through [CocoaPods](http://cocoapods.org) and [Carthage](https://github.com/Carthage/Carthage).
+To install it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'Bumbo'
 ```
+
+or in your Cartfile:
+
+```ruby
+github "guilhermearaujo/Bumbo"
+```
+
 ## Usage
 
 Configure your server and secret key:
