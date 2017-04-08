@@ -25,10 +25,11 @@ Bumbo.configure(host: "https://thumbor.myurl.com/", secretKey: nil) // Unsafe mo
 Build your image URL with the desired settings and filters:
 
 ```swift
-Bumbo.load("http://funnymemes.com/hilarious.jpg", width: 320, height: 180)
+Bumbo.load("http://funnymemes.com/hilarious.jpg")
   .trim()
   .crop(leftTop: (x: 0, y: 0), rightBottom: (x: 200, y: 200))
   .fitIn()
+  .resize(width: 320, height: 180)
   .align(horizontal: .left, vertical: .bottom)
   .useSmartDetectors()
   .filter(.grayScale)
