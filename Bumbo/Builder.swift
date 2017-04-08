@@ -27,10 +27,8 @@ public extension Bumbo {
     var smartDetectors: Bool = true
     var filters: [Filter] = []
 
-    init(url: String, width: Int, height: Int) {
+    init(url: String) {
       self.sourceUrl = url
-      self.width = width
-      self.height = height
     }
 
     /**
@@ -72,6 +70,29 @@ public extension Bumbo {
      */
     public func fitIn(_ enabled: Bool = true) -> Self {
       self.fitIn = enabled
+      return self
+    }
+
+    /**
+     Resize will define the dimensions of the image.
+     - parameter width: The width of the image
+     - parameter height: The height of the image
+     - returns: The builder
+     */
+    public func resize(width: Double, height: Double) -> Self {
+      self.width = Int(width)
+      self.height = Int(height)
+      return self
+    }
+
+    /**
+     Resize will define the dimensions of the image.
+     - parameter size: The size of the image
+     - returns: The builder
+     */
+    public func resize(size: CGSize) -> Self {
+      self.width = Int(size.width)
+      self.height = Int(size.height)
       return self
     }
 

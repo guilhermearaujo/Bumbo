@@ -82,8 +82,8 @@ public class Bumbo {
    - parameter height: The desired image height
    - returns: A builder which filters and settings can be applied to
    */
-  static public func load(_ url: String, width: Int, height: Int) -> Builder {
-    return Builder(url: url, width: width, height: height)
+  static public func load(_ url: String) -> Builder {
+    return Builder(url: url)
   }
 
   static func unsafe() -> Bool {
