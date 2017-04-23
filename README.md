@@ -44,7 +44,7 @@ Bumbo.load("http://funnymemes.com/hilarious.jpg")
   .filter(.rotate(90))
   .filter(.quality(50))
   .filter(.noise(50))
-  .toUrl()
+  .toURL()
 ```
 
 ## License
