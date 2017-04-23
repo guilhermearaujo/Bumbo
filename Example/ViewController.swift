@@ -30,15 +30,15 @@ class ViewController: UIViewController {
       .filter(.rotate(90))
       .filter(.quality(50))
       .filter(.noise(50))
-      .toUrl()
+      .toURL()
 
-    print(url)
+    print(url.absoluteString)
 
     let imageView = UIImageView(frame: view.frame)
     imageView.contentMode = UIViewContentMode.center
     view.addSubview(imageView)
 
-    let data = try! Data(contentsOf: URL(string: url)!)
+    let data = try! Data(contentsOf: url)
     imageView.image = UIImage(data: data)
   }
 }

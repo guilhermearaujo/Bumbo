@@ -156,10 +156,10 @@ public extension Bumbo {
     }
 
     /**
-     Generates the final URL.
-     - returns: The URL to the processed image (or meta JSON)
+     Generates the final URL String.
+     - returns: The URL String to the processed image (or meta JSON)
      */
-    public func toUrl() -> String {
+    public func toString() -> String {
       guard let host = Bumbo.host else {
         return "Bumbo: Thumbor host is not defined"
       }
@@ -204,6 +204,14 @@ public extension Bumbo {
       thumborUrl.append(sourceUrl)
 
       return host + (Bumbo.unsafe() ? "unsafe/\(thumborUrl)" : encrypt(url: thumborUrl))
+    }
+
+    /**
+     Generates the final URL.
+     - returns: The URL to the processed image (or meta JSON)
+     */
+    public func toURL() -> URL {
+      return URL(string: toString())!
     }
 
     private func concatFilters() -> String {
