@@ -13,6 +13,7 @@ import Nimble
 @testable import Bumbo
 
 class BuilderSpec: QuickSpec {
+  // swiftlint:disable:next function_body_length
   override func spec() {
     let host = "http://host.com"
     let originalUrl = "http://test.url/image.jpg"

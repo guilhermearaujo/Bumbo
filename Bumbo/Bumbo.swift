@@ -14,8 +14,8 @@ import Foundation
  _A swifty client for [Thumbor](https://github.com/thumbor/thumbor)_
  */
 public class Bumbo {
-  static var host: String? = nil
-  static var secretKey: String? = nil
+  static var host: String?
+  static var secretKey: String?
 
   /// Trim removes surrounding space in images
   public enum TrimCorner: String {

@@ -226,6 +226,8 @@ public extension Bumbo {
 
     private func encrypt(url: String) -> String {
       let bytes = Array(url.utf8)
+
+      // swiftlint:disable:next force_try
       let signature = try! HMAC(key: Bumbo.secretKey!, variant: .sha1).authenticate(bytes)
       return signature.toBase64()!.urlSafe() + "/" + url
     }
