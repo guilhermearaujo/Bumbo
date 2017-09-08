@@ -20,6 +20,10 @@
 		798CAD871E7A405200D3C0C7 /* Bumbo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798CAD831E7A405200D3C0C7 /* Bumbo.swift */; };
 		798CAD881E7A405200D3C0C7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798CAD841E7A405200D3C0C7 /* Extensions.swift */; };
 		798CAD891E7A405200D3C0C7 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798CAD851E7A405200D3C0C7 /* Filters.swift */; };
+		79FE85411F6249760010B20A /* Bumbo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798CAD771E7A3FFA00D3C0C7 /* Bumbo.framework */; };
+		79FE854A1F62499E0010B20A /* BuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FE85471F62499E0010B20A /* BuilderSpec.swift */; };
+		79FE854B1F62499E0010B20A /* BumboSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FE85481F62499E0010B20A /* BumboSpec.swift */; };
+		79FE854C1F62499E0010B20A /* FiltersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FE85491F62499E0010B20A /* FiltersSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 798CAD761E7A3FFA00D3C0C7;
 			remoteInfo = Bumbo;
+		};
+		79FE85421F6249760010B20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 798CAD6E1E7A3FFA00D3C0C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 798CAD761E7A3FFA00D3C0C7;
+			remoteInfo = Bumbo;
+		};
+		79FE854D1F6249BE0010B20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 798CAD6E1E7A3FFA00D3C0C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7903B5D41E7CB7A300160352;
+			remoteInfo = Example;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -62,6 +80,13 @@
 		798CAD831E7A405200D3C0C7 /* Bumbo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bumbo.swift; sourceTree = "<group>"; };
 		798CAD841E7A405200D3C0C7 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		798CAD851E7A405200D3C0C7 /* Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		79FE853C1F6249760010B20A /* BumboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BumboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79FE85401F6249760010B20A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79FE85471F62499E0010B20A /* BuilderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderSpec.swift; sourceTree = "<group>"; };
+		79FE85481F62499E0010B20A /* BumboSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BumboSpec.swift; sourceTree = "<group>"; };
+		79FE85491F62499E0010B20A /* FiltersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersSpec.swift; sourceTree = "<group>"; };
+		79FE85501F6249FE0010B20A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		79FE85511F6249FE0010B20A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +103,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				79567F9A1E7D8CB70006435B /* CryptoSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79FE85391F6249760010B20A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79FE85411F6249760010B20A /* Bumbo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +135,7 @@
 			children = (
 				798CAD791E7A3FFA00D3C0C7 /* Bumbo */,
 				7903B5D61E7CB7A300160352 /* Example */,
+				79FE853D1F6249760010B20A /* BumboTests */,
 				798CAD781E7A3FFA00D3C0C7 /* Products */,
 				DA9FDAB27C3FB10DC0439934 /* Frameworks */,
 			);
@@ -112,6 +146,7 @@
 			children = (
 				798CAD771E7A3FFA00D3C0C7 /* Bumbo.framework */,
 				7903B5D51E7CB7A300160352 /* Example.app */,
+				79FE853C1F6249760010B20A /* BumboTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,10 +164,23 @@
 			path = Bumbo;
 			sourceTree = "<group>";
 		};
+		79FE853D1F6249760010B20A /* BumboTests */ = {
+			isa = PBXGroup;
+			children = (
+				79FE85471F62499E0010B20A /* BuilderSpec.swift */,
+				79FE85481F62499E0010B20A /* BumboSpec.swift */,
+				79FE85491F62499E0010B20A /* FiltersSpec.swift */,
+				79FE85401F6249760010B20A /* Info.plist */,
+			);
+			path = BumboTests;
+			sourceTree = "<group>";
+		};
 		DA9FDAB27C3FB10DC0439934 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				79567F991E7D8CB70006435B /* CryptoSwift.framework */,
+				79FE85501F6249FE0010B20A /* Nimble.framework */,
+				79FE85511F6249FE0010B20A /* Quick.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -188,13 +236,33 @@
 			productReference = 798CAD771E7A3FFA00D3C0C7 /* Bumbo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		79FE853B1F6249760010B20A /* BumboTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79FE85461F6249760010B20A /* Build configuration list for PBXNativeTarget "BumboTests" */;
+			buildPhases = (
+				79FE85381F6249760010B20A /* Sources */,
+				79FE85391F6249760010B20A /* Frameworks */,
+				79FE853A1F6249760010B20A /* Resources */,
+				79E9BD191F6253D300BFDF4C /* Copy Carthage Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79FE85431F6249760010B20A /* PBXTargetDependency */,
+				79FE854E1F6249BE0010B20A /* PBXTargetDependency */,
+			);
+			name = BumboTests;
+			productName = BumboTests;
+			productReference = 79FE853C1F6249760010B20A /* BumboTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		798CAD6E1E7A3FFA00D3C0C7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Guilherme Araújo";
 				TargetAttributes = {
@@ -206,6 +274,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
+					};
+					79FE853B1F6249760010B20A = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7903B5D41E7CB7A300160352;
 					};
 				};
 			};
@@ -224,6 +297,7 @@
 			targets = (
 				798CAD761E7A3FFA00D3C0C7 /* Bumbo */,
 				7903B5D41E7CB7A300160352 /* Example */,
+				79FE853B1F6249760010B20A /* BumboTests */,
 			);
 		};
 /* End PBXProject section */
@@ -246,7 +320,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79FE853A1F6249760010B20A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79E9BD191F6253D300BFDF4C /* Copy Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				CryptoSwift.framework,
+				Nimble.framework,
+				Quick.framework,
+			);
+			name = "Copy Carthage Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "exec \"${SRCROOT}/scripts/copy-carthage-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7903B5D11E7CB7A300160352 /* Sources */ = {
@@ -269,6 +370,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79FE85381F6249760010B20A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79FE854C1F62499E0010B20A /* FiltersSpec.swift in Sources */,
+				79FE854A1F62499E0010B20A /* BuilderSpec.swift in Sources */,
+				79FE854B1F62499E0010B20A /* BumboSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -276,6 +387,16 @@
 			isa = PBXTargetDependency;
 			target = 798CAD761E7A3FFA00D3C0C7 /* Bumbo */;
 			targetProxy = 7903B5FD1E7CC7B500160352 /* PBXContainerItemProxy */;
+		};
+		79FE85431F6249760010B20A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 798CAD761E7A3FFA00D3C0C7 /* Bumbo */;
+			targetProxy = 79FE85421F6249760010B20A /* PBXContainerItemProxy */;
+		};
+		79FE854E1F6249BE0010B20A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7903B5D41E7CB7A300160352 /* Example */;
+			targetProxy = 79FE854D1F6249BE0010B20A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -481,6 +602,42 @@
 			};
 			name = Release;
 		};
+		79FE85441F6249760010B20A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BumboTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.guilhermearaujo.BumboTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+			};
+			name = Debug;
+		};
+		79FE85451F6249760010B20A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BumboTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.guilhermearaujo.BumboTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -507,6 +664,15 @@
 			buildConfigurations = (
 				798CAD801E7A3FFA00D3C0C7 /* Debug */,
 				798CAD811E7A3FFA00D3C0C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79FE85461F6249760010B20A /* Build configuration list for PBXNativeTarget "BumboTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79FE85441F6249760010B20A /* Debug */,
+				79FE85451F6249760010B20A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -38,8 +38,9 @@ class ViewController: UIViewController {
     imageView.contentMode = UIViewContentMode.center
     view.addSubview(imageView)
 
-    let data = try! Data(contentsOf: url)
-    imageView.image = UIImage(data: data)
+    if let data = try? Data(contentsOf: url) {
+      imageView.image = UIImage(data: data)
+    }
   }
 }
 
