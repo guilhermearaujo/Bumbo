@@ -11,7 +11,7 @@ import Foundation
 public extension Bumbo {
   /**
    Available filters for processing
-   
+
    Check [Thumbor's documentation](http://thumbor.readthedocs.io/en/latest/filters.html)
    for further explanation of each filter.
    */

@@ -1,4 +1,4 @@
-language: swift
+language: objective-c
 
 osx_image: xcode8.3
 
@@ -12,4 +12,8 @@ cache:
 before_install:
   - brew update
   - brew outdated carthage || brew upgrade carthage
+  - brew outdated swiftlint || brew upgrade swiftlint
   - carthage bootstrap --verbose --no-use-binaries --platform iOS --cache-builds
+
+script:
+  - swiftlint

@@ -13,6 +13,7 @@ import Nimble
 @testable import Bumbo
 
 class FiltersSpec: QuickSpec {
+  // swiftlint:disable:next function_body_length
   override func spec() {
     context("background color") {
       let filter = Bumbo.Filter.backgroundColor(UIColor.red)
