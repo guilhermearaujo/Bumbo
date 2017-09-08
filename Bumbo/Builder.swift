@@ -87,18 +87,6 @@ public extension Bumbo {
 
     /**
      Resize will define the dimensions of the image.
-     - parameter width: The width of the image
-     - parameter height: The height of the image
-     - returns: The builder
-     */
-    public func resize(width: Double, height: Double) -> Self {
-      self.width = Int(width)
-      self.height = Int(height)
-      return self
-    }
-
-    /**
-     Resize will define the dimensions of the image.
      - parameter size: The size of the image
      - returns: The builder
      */
