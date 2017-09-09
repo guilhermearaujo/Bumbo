@@ -278,7 +278,6 @@
 					79FE853B1F6249760010B20A = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 7903B5D41E7CB7A300160352;
 					};
 				};
 			};
@@ -616,7 +615,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.guilhermearaujo.BumboTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
 			};
 			name = Debug;
 		};
@@ -634,7 +632,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.guilhermearaujo.BumboTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
 			};
 			name = Release;
 		};
