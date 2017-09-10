@@ -41,13 +41,6 @@
 			remoteGlobalIDString = 798CAD761E7A3FFA00D3C0C7;
 			remoteInfo = Bumbo;
 		};
-		79FE854D1F6249BE0010B20A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 798CAD6E1E7A3FFA00D3C0C7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7903B5D41E7CB7A300160352;
-			remoteInfo = Example;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -249,7 +242,6 @@
 			);
 			dependencies = (
 				79FE85431F6249760010B20A /* PBXTargetDependency */,
-				79FE854E1F6249BE0010B20A /* PBXTargetDependency */,
 			);
 			name = BumboTests;
 			productName = BumboTests;
@@ -391,11 +383,6 @@
 			isa = PBXTargetDependency;
 			target = 798CAD761E7A3FFA00D3C0C7 /* Bumbo */;
 			targetProxy = 79FE85421F6249760010B20A /* PBXContainerItemProxy */;
-		};
-		79FE854E1F6249BE0010B20A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7903B5D41E7CB7A300160352 /* Example */;
-			targetProxy = 79FE854D1F6249BE0010B20A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
