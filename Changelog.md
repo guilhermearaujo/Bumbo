@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.0
+* Swift 4 compatibility
+* Removed resizing with Doubles
+
 ## 0.4.0
 * Allow resizing with CGFloat dimensions
 * Updated builder to generate String or URL objects
