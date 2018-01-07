@@ -50,6 +50,9 @@ Bumbo.load("http://funnymemes.com/hilarious.jpg")
   .toURL()
 ```
 
+### Functions & filters
+The [documentation](http://guilhermearaujo.me/Bumbo/) provides a comprehensive list of [functions](http://guilhermearaujo.me/Bumbo/Classes/Bumbo/Builder.html) and [filters](http://guilhermearaujo.me/Bumbo/Classes/Bumbo/Filter.html) you can use to manipulate your images.
+
 ## License
 
-Bumbo is available under the MIT license. See the LICENSE file for more info.
+Bumbo is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
