@@ -55,4 +55,4 @@ The [documentation](http://guilhermearaujo.me/Bumbo/) provides a comprehensive l
 
 ## License
 
-Bumbo is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
+Bumbo is available under the MIT license. See the [LICENSE](https://github.com/guilhermearaujo/Bumbo/blob/master/LICENSE) file for more info.
