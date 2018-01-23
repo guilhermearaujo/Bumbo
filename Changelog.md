@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.0
+* Update CryptoSwift
+
 ## 0.5.0
 * Swift 4 compatibility
 * Removed resizing with Doubles

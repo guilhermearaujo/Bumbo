@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Bumbo'
-  s.version          = '0.5.0'
+  s.version          = '1.0.0'
   s.summary          = 'A swifty client for Thumbor'
 
   s.description      = <<-DESC
@@ -25,5 +25,5 @@ It helps you adding filters to images without worries.
 
   s.source_files = 'Bumbo/**/*'
 
-  s.dependency 'CryptoSwift', '~> 0.7.2'
+  s.dependency 'CryptoSwift', '~> 0.8.1'
 end
