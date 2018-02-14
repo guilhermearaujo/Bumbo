@@ -89,6 +89,12 @@ public extension Bumbo {
     /// Enhances apparent sharpness of the image
     case sharpen(amount: Float, radius: Float, luminanceOnly: Bool)
 
+    /// Removes EXIF information
+    ///
+    /// This is useful if your server has set PRESERVE_EXIF_INFO = True
+    /// but still wish to overwrite this behavior in some cases
+    case stripEXIF
+
     /// Removes any ICC information
     case stripICC
 
@@ -142,6 +148,8 @@ public extension Bumbo {
         return "round_corner(\(radius))"
       case .sharpen(let amount, let radius, let luminanceOnly):
         return "sharpen(\(amount),\(radius),\(luminanceOnly))"
+      case .stripEXIF:
+        return "strip_exif()"
       case .stripICC:
         return "strip_icc()"
       case .upscale:
