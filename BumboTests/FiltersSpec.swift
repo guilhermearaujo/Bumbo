@@ -200,10 +200,36 @@ class FiltersSpec: QuickSpec {
     }
 
     context("watermark") {
-      let filter = Bumbo.Filter.watermark(url: "url", x: 10, y: 20, alpha: 30)
+      context("no ratio") {
+        let filter = Bumbo.Filter.watermark(url: "url", x: 10, y: 20, alpha: 30, widthRatio: nil, heightRatio: nil)
 
-      it("component") {
-        expect(filter.filterComponent).to(equal("watermark(url,10,20,30)"))
+        it("component") {
+          expect(filter.filterComponent).to(equal("watermark(url,10,20,30,none,none)"))
+        }
+      }
+
+      context("width ratio only") {
+        let filter = Bumbo.Filter.watermark(url: "url", x: 10, y: 20, alpha: 30, widthRatio: 0.3, heightRatio: nil)
+
+        it("component") {
+          expect(filter.filterComponent).to(equal("watermark(url,10,20,30,0.3,none)"))
+        }
+      }
+
+      context("height ratio only") {
+        let filter = Bumbo.Filter.watermark(url: "url", x: 10, y: 20, alpha: 30, widthRatio: nil, heightRatio: 0.5)
+
+        it("component") {
+          expect(filter.filterComponent).to(equal("watermark(url,10,20,30,none,0.5)"))
+        }
+      }
+
+      context("both ratios") {
+        let filter = Bumbo.Filter.watermark(url: "url", x: 10, y: 20, alpha: 30, widthRatio: 0.3, heightRatio: 0.5)
+
+        it("component") {
+          expect(filter.filterComponent).to(equal("watermark(url,10,20,30,0.3,0.5)"))
+        }
       }
     }
   }
