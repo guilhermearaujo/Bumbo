@@ -75,7 +75,7 @@ class FiltersSpec: QuickSpec {
       let filter = Bumbo.Filter.filling(color: UIColor.green, fillTransparent: true)
 
       it("component") {
-        expect(filter.filterComponent).to(equal("filling(00ff00,true)"))
+        expect(filter.filterComponent).to(equal("fill(00ff00,true)"))
       }
     }
 
