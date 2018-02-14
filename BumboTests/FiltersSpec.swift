@@ -48,10 +48,35 @@ class FiltersSpec: QuickSpec {
     }
 
     context("convolution") {
-      let filter = Bumbo.Filter.convolution(matrix: [[1, 2, 1], [2, 4, 2], [2, 1, 2]], normalize: true)
+      context("valid matrix") {
+        let filter = Bumbo.Filter.convolution(matrix: [[1, 2, 1], [2, 4, 2], [2, 1, 2]], normalize: true)
 
-      it("component") {
-        expect(filter.filterComponent).to(equal("convolution(1;2;1;2;4;2;2;1;2,3,true)"))
+        it("component") {
+          expect(filter.filterComponent).to(equal("convolution(1;2;1;2;4;2;2;1;2,3,true)"))
+        }
+      }
+
+      context("empty matrix") {
+        let filter = Bumbo.Filter.convolution(matrix: [[]], normalize: true)
+
+        it("component") {
+          expect(filter.filterComponent).to(equal(""))
+        }
+      }
+
+      context("non-square matrices") {
+        let matrices = [
+          [[1, 2, 1], [2, 4, 2]],
+          [[1, 2, 1], [2, 4, 2], [2, 1]]
+        ]
+
+        matrices.forEach { matrix in
+          let filter = Bumbo.Filter.convolution(matrix: matrix, normalize: true)
+
+          it("component") {
+            expect(filter.filterComponent).to(equal(""))
+          }
+        }
       }
     }
 
