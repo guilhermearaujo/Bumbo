@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.0
+* Fixed Filling filter
+* Update Watermark filter with width and height ratios
+* Added filters:
+  * Upscale
+  * Strip EXIF
+
 ## 1.0.0
 * Update CryptoSwift
 
