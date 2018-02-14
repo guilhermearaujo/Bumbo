@@ -117,7 +117,8 @@ public extension Bumbo {
       case .contrast(let amount):
         return "contrast(\(amount))"
       case .convolution(let matrix, let normalize):
-        return "convolution(\(reduceMatrix(matrix)),\(matrix.first?.count ?? 0),\(normalize))"
+        guard assertSquareMatrix(matrix) else { return "" }
+        return "convolution(\(reduceMatrix(matrix)),\(matrix.first!.count),\(normalize))"
       case .equalize:
         return "equalize()"
       case .extractFocalPoints:
@@ -160,6 +161,27 @@ public extension Bumbo {
 
         return "watermark(\(url),\(x),\(y),\(alpha),\(wRatio),\(hRatio))"
       }
+    }
+
+    private func assertSquareMatrix(_ matrix: [[Int]]) -> Bool {
+      guard let width = matrix.first?.count, width > 0 else {
+        print("Bumbo: convolution error: matrix is empty")
+        return false
+      }
+
+      guard matrix.count == width else {
+        print("Bumbo: convolution error: matrix is not square")
+        return false
+      }
+
+      for row in matrix {
+        if row.count != width {
+          print("Bumbo: convolution error: matrix is not square")
+          return false
+        }
+      }
+
+      return true
     }
 
     private func reduceMatrix(_ matrix: [[Int]]) -> String {
