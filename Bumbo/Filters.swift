@@ -123,7 +123,7 @@ public extension Bumbo {
       case .extractFocalPoints:
         return "extract_focal()"
       case .filling(let color, let fillTransparent):
-        return "filling(\(color.hexColor),\(fillTransparent))"
+        return "fill(\(color.hexColor),\(fillTransparent))"
       case .focal(let top, let left, let bottom, let right):
         return "focal(\(left)x\(top),\(right)x\(bottom))"
       case .format(let format):
