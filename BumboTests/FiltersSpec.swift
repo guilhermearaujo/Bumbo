@@ -175,6 +175,14 @@ class FiltersSpec: QuickSpec {
       }
     }
 
+    context("strip EXIF") {
+      let filter = Bumbo.Filter.stripEXIF
+
+      it("component") {
+        expect(filter.filterComponent).to(equal("strip_exif()"))
+      }
+    }
+
     context("strip ICC") {
       let filter = Bumbo.Filter.stripICC
 
