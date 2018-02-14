@@ -183,6 +183,14 @@ class FiltersSpec: QuickSpec {
       }
     }
 
+    context("upscale") {
+      let filter = Bumbo.Filter.upscale
+
+      it("component") {
+        expect(filter.filterComponent).to(equal("upscale()"))
+      }
+    }
+
     context("watermark") {
       let filter = Bumbo.Filter.watermark(url: "url", x: 10, y: 20, alpha: 30)
 
