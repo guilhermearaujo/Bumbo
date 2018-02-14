@@ -92,6 +92,11 @@ public extension Bumbo {
     /// Removes any ICC information
     case stripICC
 
+    /// Upscale
+    ///
+    /// This only makes sense with "fitIn"
+    case upscale
+
     /// Adds a watermark image on top of the original
     case watermark(url: String, x: Int, y: Int, alpha: Int)
 
@@ -139,6 +144,8 @@ public extension Bumbo {
         return "sharpen(\(amount),\(radius),\(luminanceOnly))"
       case .stripICC:
         return "strip_icc()"
+      case .upscale:
+        return "upscale()"
       case .watermark(let url, let x, let y, let alpha):
         return "watermark(\(url),\(x),\(y),\(alpha))"
       }
