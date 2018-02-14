@@ -104,7 +104,7 @@ public extension Bumbo {
     case upscale
 
     /// Adds a watermark image on top of the original
-    case watermark(url: String, x: Int, y: Int, alpha: Int)
+    case watermark(url: String, x: Int, y: Int, alpha: Int, widthRatio: Float?, heightRatio: Float?)
 
     var filterComponent: String {
       switch self {
@@ -154,8 +154,11 @@ public extension Bumbo {
         return "strip_icc()"
       case .upscale:
         return "upscale()"
-      case .watermark(let url, let x, let y, let alpha):
-        return "watermark(\(url),\(x),\(y),\(alpha))"
+      case .watermark(let url, let x, let y, let alpha, let widthRatio, let heightRatio):
+        let wRatio = widthRatio != nil ? String(widthRatio!) : "none"
+        let hRatio = heightRatio != nil ? String(heightRatio!) : "none"
+
+        return "watermark(\(url),\(x),\(y),\(alpha),\(wRatio),\(hRatio))"
       }
     }
 
