@@ -16,10 +16,11 @@ Bumbo is a client for [Thumbor](https://github.com/thumbor/thumbor) written in S
 It helps you adding filters to images without worries.
                        DESC
 
-  s.homepage         = 'https://github.com/guilhermearaujo/Bumbo'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Guilherme Araújo' => 'guilhermeama@gmail.com' }
-  s.source           = { :git => 'https://github.com/guilhermearaujo/Bumbo.git', :tag => s.version.to_s }
+  s.homepage          = 'https://github.com/guilhermearaujo/Bumbo'
+  s.documentation_url = 'http://guilhermearaujo.me/Bumbo'
+  s.license           = { :type => 'MIT', :file => 'LICENSE' }
+  s.author            = { 'Guilherme Araújo' => 'guilhermeama@gmail.com' }
+  s.source            = { :git => 'https://github.com/guilhermearaujo/Bumbo.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
