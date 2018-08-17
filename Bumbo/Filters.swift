@@ -174,11 +174,9 @@ public extension Bumbo {
         return false
       }
 
-      for row in matrix {
-        if row.count != width {
-          print("Bumbo: convolution error: matrix is not square")
-          return false
-        }
+      for row in matrix where row.count != width {
+        print("Bumbo: convolution error: matrix is not square")
+        return false
       }
 
       return true
