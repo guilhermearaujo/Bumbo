@@ -2,3 +2,8 @@ excluded:
   - Carthage
   - docs
   - scripts
+
+identifier_name:
+  excluded:
+    - x
+    - y
