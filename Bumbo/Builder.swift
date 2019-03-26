@@ -13,7 +13,7 @@ public extension Bumbo {
   /**
     A builder used to apply settings and filters.
    */
-  public class Builder {
+  class Builder {
     var sourceUrl: String = ""
     var width: Int = 0
     var height: Int = 0
