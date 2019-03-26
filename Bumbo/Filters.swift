@@ -15,7 +15,7 @@ public extension Bumbo {
    Check [Thumbor's documentation](http://thumbor.readthedocs.io/en/latest/filters.html)
    for further explanation of each filter.
    */
-  public enum Filter {
+  enum Filter {
     /// Sets the background layer to the specified color
     case backgroundColor(UIColor)
 
