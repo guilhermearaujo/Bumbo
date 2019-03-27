@@ -5,8 +5,8 @@ _A swifty client for [Thumbor](https://github.com/thumbor/thumbor)_
 [![Carthage compatible](https://img.shields.io/badge/carthage-compatible-brightgreen.svg)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/Bumbo.svg?style=flat)](http://cocoapods.org/pods/Bumbo)
 [![Platform](https://img.shields.io/cocoapods/p/Bumbo.svg?style=flat)](http://cocoapods.org/pods/Bumbo)
-[![Build Status](https://img.shields.io/travis/guilhermearaujo/Bumbo.svg)](https://travis-ci.org/guilhermearaujo/Bumbo)
-[![codecov](https://img.shields.io/codecov/c/github/guilhermearaujo/Bumbo.svg)](https://codecov.io/gh/guilhermearaujo/Bumbo)
+[![Build Status](https://travis-ci.org/guilhermearaujo/Bumbo.svg?branch=master)](https://travis-ci.org/guilhermearaujo/Bumbo)
+[![codecov](https://codecov.io/gh/guilhermearaujo/Bumbo/branch/master/graph/badge.svg)](https://codecov.io/gh/guilhermearaujo/Bumbo)
 
 ## Installation
 
