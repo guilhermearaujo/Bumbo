@@ -26,5 +26,5 @@ It helps you adding filters to images without worries.
 
   s.source_files = 'Bumbo/**/*.swift'
 
-  s.dependency 'CryptoSwift', '~> 0.11'
+  s.dependency 'CryptoSwift', '~> 1.0'
 end
