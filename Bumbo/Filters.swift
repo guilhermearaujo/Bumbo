@@ -92,6 +92,9 @@ public extension Bumbo {
     /// Enhances apparent sharpness of the image
     case sharpen(amount: Float, radius: Float, luminanceOnly: Bool)
 
+    /// Resizes the image without cropping
+    case stretch
+
     /// Removes EXIF information
     ///
     /// This is useful if your server has set PRESERVE_EXIF_INFO = True
@@ -154,6 +157,8 @@ public extension Bumbo {
         return "round_corner(\(radius))"
       case .sharpen(let amount, let radius, let luminanceOnly):
         return "sharpen(\(amount),\(radius),\(luminanceOnly))"
+      case .stretch:
+        return "stretch()"
       case .stripEXIF:
         return "strip_exif()"
       case .stripICC:
