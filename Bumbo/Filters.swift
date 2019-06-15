@@ -16,6 +16,9 @@ public extension Bumbo {
    for further explanation of each filter.
    */
   enum Filter {
+    /// Overrides the server `AUTO_PNG_TO_JPG` config
+    case autoJPG(Bool)
+
     /// Sets the background layer to the specified color
     case backgroundColor(UIColor)
 
@@ -114,6 +117,8 @@ public extension Bumbo {
 
     var filterComponent: String {
       switch self {
+      case .autoJPG(let enable):
+        return "autojpg(\(enable))"
       case .backgroundColor(let color):
         return "background_color(\(color.hexColor))"
       case .blur(let radius, let sigma):
