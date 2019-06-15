@@ -208,6 +208,14 @@ class FiltersSpec: QuickSpec {
       }
     }
 
+    context("stretch") {
+      let filter = Bumbo.Filter.stretch
+
+      it("component") {
+        expect(filter.filterComponent).to(equal("stretch()"))
+      }
+    }
+
     context("strip EXIF") {
       let filter = Bumbo.Filter.stripEXIF
 
