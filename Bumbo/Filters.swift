@@ -64,6 +64,9 @@ public extension Bumbo {
     /// Adds noise to the image
     case noise(Int)
 
+    /// Specifies the proportion of the output image, relative to the input's dimensios or the output size, if specified
+    case proportion(Float)
+
     /// Changes the overall quality of the JPEG image (does nothing for PNGs
     /// or GIFs)
     ///
@@ -137,6 +140,8 @@ public extension Bumbo {
         return "no_upscale()"
       case .noise(let amount):
         return "noise(\(amount))"
+      case .proportion(let proportion):
+        return "proportion(\(proportion))"
       case .quality(let quality):
         return "quality(\(quality))"
       case .redEye:
