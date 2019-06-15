@@ -152,6 +152,14 @@ class FiltersSpec: QuickSpec {
       }
     }
 
+    context("proportion") {
+      let filter = Bumbo.Filter.proportion(0.4)
+
+      it("component") {
+        expect(filter.filterComponent).to(equal("proportion(0.4)"))
+      }
+    }
+
     context("quality") {
       let filter = Bumbo.Filter.quality(100)
 
