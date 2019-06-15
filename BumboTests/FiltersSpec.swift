@@ -15,6 +15,14 @@ import Nimble
 class FiltersSpec: QuickSpec {
   // swiftlint:disable:next function_body_length
   override func spec() {
+    context("auto JPG") {
+      let filter = Bumbo.Filter.autoJPG(true)
+
+      it("component") {
+        expect(filter.filterComponent).to(equal("autojpg(true)"))
+      }
+    }
+
     context("background color") {
       let filter = Bumbo.Filter.backgroundColor(UIColor.red)
 
