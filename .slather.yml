@@ -3,4 +3,4 @@ scheme: Bumbo
 xcodeproj: Bumbo.xcodeproj
 workspace: Bumbo.wcworkspace
 source_directory: .
-output_directory: coverage
+output_directory: .
