@@ -6,7 +6,8 @@ _A swifty client for [Thumbor](https://github.com/thumbor/thumbor)_
 [![License](https://img.shields.io/cocoapods/l/Bumbo.svg?style=flat)](http://cocoapods.org/pods/Bumbo)
 [![Platform](https://img.shields.io/cocoapods/p/Bumbo.svg?style=flat)](http://cocoapods.org/pods/Bumbo)
 [![Build Status](https://travis-ci.org/guilhermearaujo/Bumbo.svg?branch=master)](https://travis-ci.org/guilhermearaujo/Bumbo)
-[![codecov](https://codecov.io/gh/guilhermearaujo/Bumbo/branch/master/graph/badge.svg)](https://codecov.io/gh/guilhermearaujo/Bumbo)
+[![Maintainability](https://api.codeclimate.com/v1/badges/63073700a6288733c82f/maintainability)](https://codeclimate.com/github/guilhermearaujo/Bumbo/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/63073700a6288733c82f/test_coverage)](https://codeclimate.com/github/guilhermearaujo/Bumbo/test_coverage)
 
 ## Installation
 

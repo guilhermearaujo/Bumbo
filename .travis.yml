@@ -11,14 +11,21 @@ cache:
   - Carthage
 
 before_install:
+  - gem install slather
   - brew update
   - brew outdated carthage || brew upgrade carthage
   - brew outdated swiftlint || brew upgrade swiftlint
   - carthage bootstrap --platform iOS --cache-builds
 
+before_build:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
 script:
   - swiftlint
   - xcodebuild -project Bumbo.xcodeproj -scheme BumboTests -destination "platform=iOS Simulator,name=iPhone 6" -configuration Debug ONLY_ACTIVE_ARCH=YES -enableCodeCoverage YES test | xcpretty -c
 
-after_success:
-  - bash <(curl -s https://codecov.io/bash) -cF ios -J Bumbo
+after_script:
+  - slather
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
