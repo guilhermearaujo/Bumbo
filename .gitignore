@@ -8,6 +8,9 @@
 build/
 DerivedData/
 
+## Test coverage
+coverage/
+
 ## Various settings
 *.pbxuser
 !default.pbxuser

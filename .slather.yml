@@ -1,0 +1,6 @@
+coverage_service: cobertura_xml
+scheme: Bumbo
+xcodeproj: Bumbo.xcodeproj
+workspace: Bumbo.wcworkspace
+source_directory: .
+output_directory: coverage
