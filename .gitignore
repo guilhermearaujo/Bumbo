@@ -9,7 +9,7 @@ build/
 DerivedData/
 
 ## Test coverage
-coverage/
+cobertura.xml
 
 ## Various settings
 *.pbxuser
