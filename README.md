@@ -5,6 +5,7 @@ _A swifty client for [Thumbor](https://github.com/thumbor/thumbor)_
 [![Carthage compatible](https://img.shields.io/badge/carthage-compatible-brightgreen.svg)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/Bumbo.svg?style=flat)](http://cocoapods.org/pods/Bumbo)
 [![Platform](https://img.shields.io/cocoapods/p/Bumbo.svg?style=flat)](http://cocoapods.org/pods/Bumbo)
+![Build Status](https://github.com/guilhermearaujo/Bumbo/workflows/CI/badge.svg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/63073700a6288733c82f/maintainability)](https://codeclimate.com/github/guilhermearaujo/Bumbo/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/63073700a6288733c82f/test_coverage)](https://codeclimate.com/github/guilhermearaujo/Bumbo/test_coverage)
 

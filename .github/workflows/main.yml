@@ -1,0 +1,41 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  linter:
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Install Swiftlint
+        run: brew install swiftlint
+
+      - name: Lint
+        run: swiftlint
+
+  unit:
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Install dependencies
+        run: |
+          gem install slather
+          carthage bootstrap --platform iOS --cache-builds
+
+      - name: Prepare to build
+        run: |
+          curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-darwin-amd64 > ./cc-test-reporter
+          chmod +x ./cc-test-reporter
+          ./cc-test-reporter before-build
+
+      - name: Build
+        run: xcodebuild -project Bumbo.xcodeproj -scheme BumboTests -destination "platform=iOS Simulator,name=iPhone 6" -configuration Debug ONLY_ACTIVE_ARCH=YES -enableCodeCoverage YES test | xcpretty -c
+
+      - name: Report coverage
+        env:
+           CC_TEST_REPORTER_ID: ${{ secrets.CODECLIMATE_ID }}
+        run: |
+          slather
+          ./cc-test-reporter after-build -t cobertura --exit-code $?
