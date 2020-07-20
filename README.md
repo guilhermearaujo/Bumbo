@@ -52,7 +52,7 @@ Bumbo.load("http://funnymemes.com/hilarious.jpg")
 ```
 
 ### Functions & filters
-The [documentation](http://guilhermearaujo.me/Bumbo/) provides a comprehensive list of [functions](http://guilhermearaujo.me/Bumbo/Classes/Bumbo/Builder.html) and [filters](http://guilhermearaujo.me/Bumbo/Classes/Bumbo/Filter.html) you can use to manipulate your images.
+The [documentation](http://guilhermearaujo.dev/Bumbo/) provides a comprehensive list of [functions](http://guilhermearaujo.dev/Bumbo/Classes/Bumbo/Builder.html) and [filters](http://guilhermearaujo.dev/Bumbo/Classes/Bumbo/Filter.html) you can use to manipulate your images.
 
 ## License
 
