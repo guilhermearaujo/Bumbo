@@ -1,12 +1,18 @@
 name: CI
 
-on: [push, pull_request]
+on:
+  pull_request:
+    branches:
+      - '**'
+  push:
+    branches:
+      - master
 
 jobs:
   linter:
     runs-on: macOS-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
       - name: Install Swiftlint
         run: brew install swiftlint
@@ -17,7 +23,15 @@ jobs:
   unit:
     runs-on: macOS-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: Carthage
+          key: ${{ runner.os }}-deps-${{ hashFiles('**/Cartfile.resolved') }}
 
       - name: Install dependencies
         run: |
@@ -31,11 +45,11 @@ jobs:
           ./cc-test-reporter before-build
 
       - name: Build
-        run: xcodebuild -project Bumbo.xcodeproj -scheme BumboTests -destination "platform=iOS Simulator,name=iPhone 6" -configuration Debug ONLY_ACTIVE_ARCH=YES -enableCodeCoverage YES test | xcpretty -c
+        run: xcodebuild -project Bumbo.xcodeproj -scheme BumboTests -destination "platform=iOS Simulator,name=iPhone 8" -configuration Debug ONLY_ACTIVE_ARCH=YES -enableCodeCoverage YES test | xcpretty -c
 
       - name: Report coverage
         env:
-           CC_TEST_REPORTER_ID: ${{ secrets.CODECLIMATE_ID }}
+          CC_TEST_REPORTER_ID: ${{ secrets.CODECLIMATE_ID }}
         run: |
           slather
-          ./cc-test-reporter after-build -t cobertura --exit-code $?
+          GIT_COMMIT_SHA=$(git rev-parse HEAD) GIT_BRANCH=`[[ -z "$GITHUB_HEAD_REF" ]] && echo ${GITHUB_REF/refs\/heads\/} || echo $GITHUB_HEAD_REF` ./cc-test-reporter after-build -t cobertura --exit-code $?
