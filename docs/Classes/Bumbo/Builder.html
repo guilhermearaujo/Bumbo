@@ -8,15 +8,23 @@
     <script src="../../js/jquery.min.js" defer></script>
     <script src="../../js/jazzy.js" defer></script>
     
+    <script src="../../js/lunr.min.js" defer></script>
+    <script src="../../js/typeahead.jquery.js" defer></script>
+    <script src="../../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Class/Builder" class="dashAnchor"></a>
     <a title="Builder Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html">Bumbo Docs</a> (100% documented)</p>
+        <p><a href="../../index.html">Bumbo 1.1.3 Docs</a> (100% documented)</p>
         <p class="header-right"><a href="https://github.com/guilhermearaujo/Bumbo"><img src="../../img/gh.png"/>View on GitHub</a></p>
-        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fguilhermearaujo%2Eme%2FBumbo%2Fdocsets%2FBumbo%2Exml"><img src="../../img/dash.png"/>Install in Dash</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fguilhermearaujo.dev%2FBumbo%2Fdocsets%2FBumbo.xml"><img src="../../img/dash.png"/>Install in Dash</a></p>
+        <p class="header-right">
+          <form role="search" action="../../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -63,12 +71,16 @@
             <h1>Builder</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Builder</span></code></pre>
 
                 </div>
               </div>
             <p>A builder used to apply settings and filters.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/guilhermearaujo/Bumbo/tree/1.1.3/Bumbo/Builder.swift#L16-L234">Show on GitHub</a>
+              </div>
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -78,7 +90,7 @@
                     <code>
                     <a name="/s:5BumboAAC7BuilderC4metayADXDSbF"></a>
                     <a name="//apple_ref/swift/Method/meta(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5BumboAAC7BuilderC4metayADXDSbF">meta(_:)</a>
+                    <a class="token" href="#/s:5BumboAAC7BuilderC4metayADXDSbF">meta(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -132,7 +144,7 @@ When meta is used, the resulting URL will return a JSON string, not an image.</p
                     <code>
                     <a name="/s:5BumboAAC7BuilderC4trimyADXDAB10TrimCornerOF"></a>
                     <a name="//apple_ref/swift/Method/trim(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5BumboAAC7BuilderC4trimyADXDAB10TrimCornerOF">trim(_:)</a>
+                    <a class="token" href="#/s:5BumboAAC7BuilderC4trimyADXDAB10TrimCornerOF">trim(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -185,7 +197,7 @@ When meta is used, the resulting URL will return a JSON string, not an image.</p
                     <code>
                     <a name="/s:5BumboAAC7BuilderC4crop7leftTop11rightBottomADXDSi1x_Si1yt_SiAH_SiAIttF"></a>
                     <a name="//apple_ref/swift/Method/crop(leftTop:rightBottom:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5BumboAAC7BuilderC4crop7leftTop11rightBottomADXDSi1x_Si1yt_SiAH_SiAIttF">crop(leftTop:rightBottom:)</a>
+                    <a class="token" href="#/s:5BumboAAC7BuilderC4crop7leftTop11rightBottomADXDSi1x_Si1yt_SiAH_SiAIttF">crop(leftTop:<wbr>rightBottom:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -250,7 +262,7 @@ When meta is used, the resulting URL will return a JSON string, not an image.</p
                     <code>
                     <a name="/s:5BumboAAC7BuilderC5fitInyADXDSbF"></a>
                     <a name="//apple_ref/swift/Method/fitIn(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5BumboAAC7BuilderC5fitInyADXDSbF">fitIn(_:)</a>
+                    <a class="token" href="#/s:5BumboAAC7BuilderC5fitInyADXDSbF">fitIn(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -303,7 +315,7 @@ When meta is used, the resulting URL will return a JSON string, not an image.</p
                     <code>
                     <a name="/s:5BumboAAC7BuilderC6resize5width6heightADXD12CoreGraphics7CGFloatV_AJtF"></a>
                     <a name="//apple_ref/swift/Method/resize(width:height:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5BumboAAC7BuilderC6resize5width6heightADXD12CoreGraphics7CGFloatV_AJtF">resize(width:height:)</a>
+                    <a class="token" href="#/s:5BumboAAC7BuilderC6resize5width6heightADXD12CoreGraphics7CGFloatV_AJtF">resize(width:<wbr>height:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -368,7 +380,7 @@ When meta is used, the resulting URL will return a JSON string, not an image.</p
                     <code>
                     <a name="/s:5BumboAAC7BuilderC6resize4sizeADXDSo6CGSizeV_tF"></a>
                     <a name="//apple_ref/swift/Method/resize(size:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5BumboAAC7BuilderC6resize4sizeADXDSo6CGSizeV_tF">resize(size:)</a>
+                    <a class="token" href="#/s:5BumboAAC7BuilderC6resize4sizeADXDSo6CGSizeV_tF">resize(size:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -421,7 +433,7 @@ When meta is used, the resulting URL will return a JSON string, not an image.</p
                     <code>
                     <a name="/s:5BumboAAC7BuilderC5align10horizontal8verticalADXDAB15HorizontalAlignO_AB08VerticalG0OtF"></a>
                     <a name="//apple_ref/swift/Method/align(horizontal:vertical:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5BumboAAC7BuilderC5align10horizontal8verticalADXDAB15HorizontalAlignO_AB08VerticalG0OtF">align(horizontal:vertical:)</a>
+                    <a class="token" href="#/s:5BumboAAC7BuilderC5align10horizontal8verticalADXDAB15HorizontalAlignO_AB08VerticalG0OtF">align(horizontal:<wbr>vertical:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -488,7 +500,7 @@ vertical align will specify which directions the cropping box will snap to.</p>
                     <code>
                     <a name="/s:5BumboAAC7BuilderC5align10horizontalADXDAB15HorizontalAlignO_tF"></a>
                     <a name="//apple_ref/swift/Method/align(horizontal:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5BumboAAC7BuilderC5align10horizontalADXDAB15HorizontalAlignO_tF">align(horizontal:)</a>
+                    <a class="token" href="#/s:5BumboAAC7BuilderC5align10horizontalADXDAB15HorizontalAlignO_tF">align(horizontal:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -543,7 +555,7 @@ will specify which direction the cropping box will snap to.</p>
                     <code>
                     <a name="/s:5BumboAAC7BuilderC5align8verticalADXDAB13VerticalAlignO_tF"></a>
                     <a name="//apple_ref/swift/Method/align(vertical:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5BumboAAC7BuilderC5align8verticalADXDAB13VerticalAlignO_tF">align(vertical:)</a>
+                    <a class="token" href="#/s:5BumboAAC7BuilderC5align8verticalADXDAB13VerticalAlignO_tF">align(vertical:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -598,7 +610,7 @@ will specify which direction the cropping box will snap to.</p>
                     <code>
                     <a name="/s:5BumboAAC7BuilderC17useSmartDetectorsyADXDSbF"></a>
                     <a name="//apple_ref/swift/Method/useSmartDetectors(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5BumboAAC7BuilderC17useSmartDetectorsyADXDSbF">useSmartDetectors(_:)</a>
+                    <a class="token" href="#/s:5BumboAAC7BuilderC17useSmartDetectorsyADXDSbF">useSmartDetectors(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -652,7 +664,7 @@ Enables the use of detectors. Detectors need to be enabled on the server as well
                     <code>
                     <a name="/s:5BumboAAC7BuilderC6filteryADXDAB6FilterOF"></a>
                     <a name="//apple_ref/swift/Method/filter(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5BumboAAC7BuilderC6filteryADXDAB6FilterOF">filter(_:)</a>
+                    <a class="token" href="#/s:5BumboAAC7BuilderC6filteryADXDAB6FilterOF">filter(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -773,8 +785,8 @@ Enables the use of detectors. Detectors need to be enabled on the server as well
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="https://guilhermearaujo.me" target="_blank" rel="external">Guilherme Araújo</a>. All rights reserved. (Last updated: 2019-06-15)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://guilhermearaujo.dev" target="_blank" rel="external">Guilherme Araújo</a>. All rights reserved. (Last updated: 2020-07-19)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

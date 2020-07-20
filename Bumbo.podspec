@@ -17,7 +17,7 @@ It helps you adding filters to images without worries.
                        DESC
 
   s.homepage          = 'https://github.com/guilhermearaujo/Bumbo'
-  s.documentation_url = 'http://guilhermearaujo.me/Bumbo'
+  s.documentation_url = 'http://guilhermearaujo.dev/Bumbo'
   s.license           = { :type => 'MIT', :file => 'LICENSE' }
   s.author            = { 'Guilherme Araújo' => 'guilhermeama@gmail.com' }
   s.source            = { :git => 'https://github.com/guilhermearaujo/Bumbo.git', :tag => s.version.to_s }
