@@ -1,0 +1,24 @@
+PODS:
+  - CryptoSwift (1.4.1)
+  - Nimble (9.2.0)
+  - Quick (4.0.0)
+
+DEPENDENCIES:
+  - CryptoSwift (~> 1.4.1)
+  - Nimble (~> 9.2.0)
+  - Quick (~> 4.0.0)
+
+SPEC REPOS:
+  trunk:
+    - CryptoSwift
+    - Nimble
+    - Quick
+
+SPEC CHECKSUMS:
+  CryptoSwift: 0bc800a7e6a24c4fc9ebeab97d44b0d5f73a78bd
+  Nimble: 4f4a345c80b503b3ea13606a4f98405974ee4d0b
+  Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
+
+PODFILE CHECKSUM: 94fd21e80f6b1b9cf223cda2db4fa6c4139fca9a
+
+COCOAPODS: 1.10.1

@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.0
+- SPM Support
+- Updated dependencies
+- added a podfile for easier cocoapods usage
+
 ## 1.1.0
 * Fixed Filling filter
 * Update Watermark filter with width and height ratios

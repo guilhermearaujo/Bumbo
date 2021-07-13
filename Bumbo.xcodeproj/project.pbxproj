@@ -24,6 +24,9 @@
 		79FE854A1F62499E0010B20A /* BuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FE85471F62499E0010B20A /* BuilderSpec.swift */; };
 		79FE854B1F62499E0010B20A /* BumboSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FE85481F62499E0010B20A /* BumboSpec.swift */; };
 		79FE854C1F62499E0010B20A /* FiltersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FE85491F62499E0010B20A /* FiltersSpec.swift */; };
+		8462D6AC269E43D800A916D9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8462D6AB269E43D800A916D9 /* Info.plist */; };
+		8462D6B0269E43ED00A916D9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8462D6AE269E43EC00A916D9 /* Info.plist */; };
+		8462D6B1269E43ED00A916D9 /* BumboTests-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 8462D6AF269E43ED00A916D9 /* BumboTests-Bridging-Header.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,18 +71,19 @@
 		79567F991E7D8CB70006435B /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
 		798CAD771E7A3FFA00D3C0C7 /* Bumbo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bumbo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		798CAD7A1E7A3FFA00D3C0C7 /* Bumbo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bumbo.h; sourceTree = "<group>"; };
-		798CAD7B1E7A3FFA00D3C0C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		798CAD821E7A405200D3C0C7 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		798CAD831E7A405200D3C0C7 /* Bumbo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bumbo.swift; sourceTree = "<group>"; };
 		798CAD841E7A405200D3C0C7 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		798CAD851E7A405200D3C0C7 /* Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
 		79FE853C1F6249760010B20A /* BumboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BumboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		79FE85401F6249760010B20A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79FE85471F62499E0010B20A /* BuilderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderSpec.swift; sourceTree = "<group>"; };
 		79FE85481F62499E0010B20A /* BumboSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BumboSpec.swift; sourceTree = "<group>"; };
 		79FE85491F62499E0010B20A /* FiltersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersSpec.swift; sourceTree = "<group>"; };
 		79FE85501F6249FE0010B20A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		79FE85511F6249FE0010B20A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		8462D6AB269E43D800A916D9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8462D6AE269E43EC00A916D9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8462D6AF269E43ED00A916D9 /* BumboTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BumboTests-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EF7A2432D54F4819EE17155 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7903B5D61E7CB7A300160352 /* Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +142,7 @@
 				7903B5D61E7CB7A300160352 /* Example */,
 				DA9FDAB27C3FB10DC0439934 /* Frameworks */,
 				798CAD781E7A3FFA00D3C0C7 /* Products */,
+				2EF7A2432D54F4819EE17155 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,12 +159,12 @@
 		798CAD791E7A3FFA00D3C0C7 /* Bumbo */ = {
 			isa = PBXGroup;
 			children = (
+				798CAD7A1E7A3FFA00D3C0C7 /* Bumbo.h */,
 				798CAD821E7A405200D3C0C7 /* Builder.swift */,
 				798CAD831E7A405200D3C0C7 /* Bumbo.swift */,
 				798CAD841E7A405200D3C0C7 /* Extensions.swift */,
 				798CAD851E7A405200D3C0C7 /* Filters.swift */,
-				798CAD7A1E7A3FFA00D3C0C7 /* Bumbo.h */,
-				798CAD7B1E7A3FFA00D3C0C7 /* Info.plist */,
+				8462D6AA269E43D800A916D9 /* PropertyList */,
 			);
 			path = Bumbo;
 			sourceTree = "<group>";
@@ -160,10 +172,11 @@
 		79FE853D1F6249760010B20A /* BumboTests */ = {
 			isa = PBXGroup;
 			children = (
+				8462D6AF269E43ED00A916D9 /* BumboTests-Bridging-Header.h */,
 				79FE85471F62499E0010B20A /* BuilderSpec.swift */,
 				79FE85481F62499E0010B20A /* BumboSpec.swift */,
 				79FE85491F62499E0010B20A /* FiltersSpec.swift */,
-				79FE85401F6249760010B20A /* Info.plist */,
+				8462D6AD269E43EC00A916D9 /* PropertyList */,
 			);
 			path = BumboTests;
 			sourceTree = "<group>";
@@ -184,6 +197,22 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		8462D6AA269E43D800A916D9 /* PropertyList */ = {
+			isa = PBXGroup;
+			children = (
+				8462D6AB269E43D800A916D9 /* Info.plist */,
+			);
+			path = PropertyList;
+			sourceTree = "<group>";
+		};
+		8462D6AD269E43EC00A916D9 /* PropertyList */ = {
+			isa = PBXGroup;
+			children = (
+				8462D6AE269E43EC00A916D9 /* Info.plist */,
+			);
+			path = PropertyList;
+			sourceTree = "<group>";
+		};
 		DA9FDAB27C3FB10DC0439934 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				798CAD7C1E7A3FFA00D3C0C7 /* Bumbo.h in Headers */,
+				8462D6B1269E43ED00A916D9 /* BumboTests-Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +356,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8462D6B0269E43ED00A916D9 /* Info.plist in Resources */,
+				8462D6AC269E43D800A916D9 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +467,7 @@
 				);
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.guilherme.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -453,6 +486,7 @@
 				);
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.guilherme.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -509,7 +543,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -565,7 +599,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -590,10 +624,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Bumbo/Info.plist;
+				INFOPLIST_FILE = Sources/Bumbo/PropertyList/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.guilherme.Bumbo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -615,10 +651,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Bumbo/Info.plist;
+				INFOPLIST_FILE = Sources/Bumbo/PropertyList/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.guilherme.Bumbo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -634,7 +672,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = BumboTests/Info.plist;
+				INFOPLIST_FILE = Tests/BumboTests/PropertyList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.guilhermearaujo.BumboTests;
@@ -651,7 +689,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = BumboTests/Info.plist;
+				INFOPLIST_FILE = Tests/BumboTests/PropertyList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.guilhermearaujo.BumboTests;
