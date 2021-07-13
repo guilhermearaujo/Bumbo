@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import class UIKit.UIColor
 
 import Quick
 import Nimble
