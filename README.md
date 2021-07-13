@@ -11,18 +11,66 @@ _A swifty client for [Thumbor](https://github.com/thumbor/thumbor)_
 
 ## Installation
 
-Bumbo is available through [CocoaPods](http://cocoapods.org) and [Carthage](https://github.com/Carthage/Carthage).
+Bumbo is available through [CocoaPods](http://cocoapods.org), [Carthage](https://github.com/Carthage/Carthage) and [Swift Package Manager](https://swift.org/package-manager/).
+
+### Cocoapods
 To install it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'Bumbo'
 ```
 
+### Carthage
 or in your Cartfile:
 
 ```ruby
 github "guilhermearaujo/Bumbo"
 ```
+
+### Swift Package Manager
+
+1. in xcode click file -> Swift Packages -> Add Swift Package Dependency
+2. in the search bar, paste: `https://github.com/guilhermearaujo/Bumbo.git`
+3. Once the package details load, select version `1.1.4`
+
+OR if you are adding Bumbo to another swift package:
+
+in your Package.swift file:
+
+```swift
+// swift-tools-version:5.3
+
+import PackageDescription
+
+let package = Package(
+	name: "MyPackage",
+	products: [
+		.library(
+			name: "MyPackage",
+			targets: ["MyPackage"]
+		),
+	],
+	dependencies: [
+		.package(url: "https://github.com/guilhermearaujo/Bumbo.git", from: "1.1.4"),
+	],
+	targets: [
+		.target(
+			name: "MyPackage",
+			dependencies: [
+				"Bumbo",
+			],
+		),
+		.testTarget(
+			name: "MyPackageTests",
+			dependencies: [
+				"MyPackage"
+			],
+		),
+	]
+)
+
+```
+
 
 ## Usage
 
