@@ -126,11 +126,11 @@
 		798CAD6D1E7A3FFA00D3C0C7 = {
 			isa = PBXGroup;
 			children = (
-				798CAD791E7A3FFA00D3C0C7 /* Bumbo */,
+				8462D6A8269E405700A916D9 /* Sources */,
+				8462D6A9269E405B00A916D9 /* Tests */,
 				7903B5D61E7CB7A300160352 /* Example */,
-				79FE853D1F6249760010B20A /* BumboTests */,
-				798CAD781E7A3FFA00D3C0C7 /* Products */,
 				DA9FDAB27C3FB10DC0439934 /* Frameworks */,
+				798CAD781E7A3FFA00D3C0C7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,6 +166,22 @@
 				79FE85401F6249760010B20A /* Info.plist */,
 			);
 			path = BumboTests;
+			sourceTree = "<group>";
+		};
+		8462D6A8269E405700A916D9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				798CAD791E7A3FFA00D3C0C7 /* Bumbo */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8462D6A9269E405B00A916D9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				79FE853D1F6249760010B20A /* BumboTests */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		DA9FDAB27C3FB10DC0439934 /* Frameworks */ = {
