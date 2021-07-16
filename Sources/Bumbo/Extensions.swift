@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import class UIKit.UIColor
+import struct CoreGraphics.CGFloat
 
 extension UIColor {
   var hexColor: String {

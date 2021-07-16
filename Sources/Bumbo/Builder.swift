@@ -8,6 +8,8 @@
 
 import Foundation
 import CryptoSwift
+import struct CoreGraphics.CGFloat
+import struct CoreGraphics.CGSize
 
 public extension Bumbo {
   /**
@@ -229,7 +231,7 @@ public extension Bumbo {
 
       // swiftlint:disable:next force_try
       let signature = try! HMAC(key: Bumbo.secretKey!, variant: .sha1).authenticate(bytes)
-      return signature.toBase64()!.urlSafe() + "/" + url
+		return signature.toBase64().urlSafe() + "/" + url
     }
   }
 }
